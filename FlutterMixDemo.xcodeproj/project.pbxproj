@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		457440A523BDD522006F59D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 457440A423BDD522006F59D0 /* AppDelegate.m */; };
-		457440A823BDD522006F59D0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 457440A723BDD522006F59D0 /* SceneDelegate.m */; };
 		457440AB23BDD522006F59D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457440AA23BDD522006F59D0 /* ViewController.m */; };
 		457440B023BDD526006F59D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 457440AF23BDD526006F59D0 /* Assets.xcassets */; };
 		457440B323BDD526006F59D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457440B123BDD526006F59D0 /* LaunchScreen.storyboard */; };
 		457440B623BDD526006F59D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 457440B523BDD526006F59D0 /* main.m */; };
+		45FE1B4A23BEF3BB009BDFB7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FE1B4923BEF3BB009BDFB7 /* SecondViewController.m */; };
 		C091AE5FFDF380B89A275A8B /* libPods-FlutterMixDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A703A6913C5931FA4E0D4FB /* libPods-FlutterMixDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -21,14 +21,14 @@
 		457440A023BDD522006F59D0 /* FlutterMixDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlutterMixDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		457440A323BDD522006F59D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		457440A423BDD522006F59D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		457440A623BDD522006F59D0 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		457440A723BDD522006F59D0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		457440A923BDD522006F59D0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		457440AA23BDD522006F59D0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		457440AF23BDD526006F59D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		457440B223BDD526006F59D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		457440B423BDD526006F59D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		457440B523BDD526006F59D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45FE1B4823BEF3BB009BDFB7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		45FE1B4923BEF3BB009BDFB7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		91FBBE77DF151BA5FFB3D729 /* Pods-FlutterMixDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterMixDemo.release.xcconfig"; path = "Target Support Files/Pods-FlutterMixDemo/Pods-FlutterMixDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F1071D5A9EE31136F2B8B6F8 /* Pods-FlutterMixDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterMixDemo.debug.xcconfig"; path = "Target Support Files/Pods-FlutterMixDemo/Pods-FlutterMixDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,14 +68,14 @@
 			children = (
 				457440A323BDD522006F59D0 /* AppDelegate.h */,
 				457440A423BDD522006F59D0 /* AppDelegate.m */,
-				457440A623BDD522006F59D0 /* SceneDelegate.h */,
-				457440A723BDD522006F59D0 /* SceneDelegate.m */,
 				457440A923BDD522006F59D0 /* ViewController.h */,
 				457440AA23BDD522006F59D0 /* ViewController.m */,
 				457440AF23BDD526006F59D0 /* Assets.xcassets */,
 				457440B123BDD526006F59D0 /* LaunchScreen.storyboard */,
 				457440B423BDD526006F59D0 /* Info.plist */,
 				457440B523BDD526006F59D0 /* main.m */,
+				45FE1B4823BEF3BB009BDFB7 /* SecondViewController.h */,
+				45FE1B4923BEF3BB009BDFB7 /* SecondViewController.m */,
 			);
 			path = FlutterMixDemo;
 			sourceTree = "<group>";
@@ -227,10 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FE1B4A23BEF3BB009BDFB7 /* SecondViewController.m in Sources */,
 				457440AB23BDD522006F59D0 /* ViewController.m in Sources */,
 				457440A523BDD522006F59D0 /* AppDelegate.m in Sources */,
 				457440B623BDD526006F59D0 /* main.m in Sources */,
-				457440A823BDD522006F59D0 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

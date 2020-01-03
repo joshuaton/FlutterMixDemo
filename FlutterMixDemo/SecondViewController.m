@@ -1,28 +1,26 @@
 //
-//  ViewController.m
+//  SecondViewController.m
 //  FlutterMixDemo
 //
-//  Created by junshao on 2020/1/2.
+//  Created by junshao on 2020/1/3.
 //  Copyright © 2020 junshao. All rights reserved.
 //
 
-#import "ViewController.h"
-#import <Flutter/Flutter.h>
-#import "AppDelegate.h"
 #import "SecondViewController.h"
-@interface ViewController ()
+#import "AppDelegate.h"
+
+@interface SecondViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.view.backgroundColor = [UIColor whiteColor];
     UIButton *button = [[UIButton alloc] init];
     button.frame = CGRectMake(100, 100, 100, 50);
-    [button setTitle:@"button" forState:UIControlStateNormal];
+    [button setTitle:@"button2" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:button];
     [button addTarget:self action:@selector(showFlutter) forControlEvents:UIControlEventTouchUpInside];
@@ -39,5 +37,14 @@
     [self.navigationController pushViewController:flutterViewController animated:YES];
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

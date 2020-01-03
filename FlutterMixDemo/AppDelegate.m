@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "GeneratedPluginRegistrant.h"
 #import "ViewController.h"
-
+#import "SecondViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,30 +18,45 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    ViewController *viewController = [[ViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+    
     self.flutterEngine = [[FlutterEngine alloc] initWithName:@"my flutter engine"];
     [self.flutterEngine run];
     [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
     self.flutterMethodChannel = [FlutterMethodChannel methodChannelWithName:@"com.junshao"
                                   binaryMessenger:self.flutterEngine.binaryMessenger];
+    [self.flutterMethodChannel setMethodCallHandler:^(FlutterMethodCall *call, FlutterResult result) {
+        if([@"jump" isEqualToString:call.method]){
+            NSDictionary *args = call.arguments;
+            NSString *url = args[@"url"];
+            if(url){
+                                UINavigationController *navigationController = [UIApplication sharedApplication].keyWindow.rootViewController;
+
+//                SecondViewController *vc = [SecondViewController new];
+//
+//                [navigationController pushViewController:vc animated:YES];
+                
+                FlutterEngine *flutterEngine = ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
+                FlutterViewController *flutterViewController = [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
+                FlutterMethodChannel *flutterMethodChannel = ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterMethodChannel;
+                [flutterMethodChannel invokeMethod:@"changeRoute" arguments:@{@"routeName":@"page1"}];
+                [navigationController pushViewController:flutterViewController animated:YES];
+                
+            }
+        }else{
+            result(FlutterMethodNotImplemented);
+        }
+    }];
     return YES;
 }
 
 
-#pragma mark - UISceneSession lifecycle
 
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
-}
-
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-}
 
 
 @end
