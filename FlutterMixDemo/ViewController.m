@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import <Flutter/Flutter.h>
 #import "AppDelegate.h"
-#import "SecondViewController.h"
+#import "BaseFlutterViewController.h"
 @interface ViewController ()
 
 @end
@@ -28,12 +28,16 @@
     [button addTarget:self action:@selector(showFlutter) forControlEvents:UIControlEventTouchUpInside];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+
 -(void)showFlutter{
     
     
     
     FlutterEngine *flutterEngine = ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
-    FlutterViewController *flutterViewController = [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
+    BaseFlutterViewController *flutterViewController = [[BaseFlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
     FlutterMethodChannel *flutterMethodChannel = ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterMethodChannel;
     [flutterMethodChannel invokeMethod:@"changeRoute" arguments:@{@"routeName":@"page0"}];
     [self.navigationController pushViewController:flutterViewController animated:YES];

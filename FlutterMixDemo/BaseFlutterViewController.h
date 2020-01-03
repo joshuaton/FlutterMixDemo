@@ -1,16 +1,16 @@
 //
-//  SecondViewController.h
+//  BaseFlutterViewController.h
 //  FlutterMixDemo
 //
 //  Created by junshao on 2020/1/3.
 //  Copyright © 2020 junshao. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Flutter/Flutter.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SecondViewController : UIViewController
+@interface BaseFlutterViewController : FlutterViewController
 
 @end
 

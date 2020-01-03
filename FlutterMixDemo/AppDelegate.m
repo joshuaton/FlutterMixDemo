@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "GeneratedPluginRegistrant.h"
 #import "ViewController.h"
-#import "SecondViewController.h"
+#import "BaseFlutterViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -37,12 +37,10 @@
             if(url){
                                 UINavigationController *navigationController = [UIApplication sharedApplication].keyWindow.rootViewController;
 
-//                SecondViewController *vc = [SecondViewController new];
-//
-//                [navigationController pushViewController:vc animated:YES];
+                
                 
                 FlutterEngine *flutterEngine = ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
-                FlutterViewController *flutterViewController = [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
+                BaseFlutterViewController *flutterViewController = [[BaseFlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
                 FlutterMethodChannel *flutterMethodChannel = ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterMethodChannel;
                 [flutterMethodChannel invokeMethod:@"changeRoute" arguments:@{@"routeName":@"page1"}];
                 [navigationController pushViewController:flutterViewController animated:YES];

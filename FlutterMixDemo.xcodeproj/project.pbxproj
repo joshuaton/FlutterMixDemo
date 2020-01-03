@@ -12,7 +12,7 @@
 		457440B023BDD526006F59D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 457440AF23BDD526006F59D0 /* Assets.xcassets */; };
 		457440B323BDD526006F59D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457440B123BDD526006F59D0 /* LaunchScreen.storyboard */; };
 		457440B623BDD526006F59D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 457440B523BDD526006F59D0 /* main.m */; };
-		45FE1B4A23BEF3BB009BDFB7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FE1B4923BEF3BB009BDFB7 /* SecondViewController.m */; };
+		45FE1B5023BF4B1B009BDFB7 /* BaseFlutterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FE1B4F23BF4B1B009BDFB7 /* BaseFlutterViewController.m */; };
 		C091AE5FFDF380B89A275A8B /* libPods-FlutterMixDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A703A6913C5931FA4E0D4FB /* libPods-FlutterMixDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +27,8 @@
 		457440B223BDD526006F59D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		457440B423BDD526006F59D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		457440B523BDD526006F59D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		45FE1B4823BEF3BB009BDFB7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		45FE1B4923BEF3BB009BDFB7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		45FE1B4E23BF4B1B009BDFB7 /* BaseFlutterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseFlutterViewController.h; sourceTree = "<group>"; };
+		45FE1B4F23BF4B1B009BDFB7 /* BaseFlutterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseFlutterViewController.m; sourceTree = "<group>"; };
 		91FBBE77DF151BA5FFB3D729 /* Pods-FlutterMixDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterMixDemo.release.xcconfig"; path = "Target Support Files/Pods-FlutterMixDemo/Pods-FlutterMixDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F1071D5A9EE31136F2B8B6F8 /* Pods-FlutterMixDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlutterMixDemo.debug.xcconfig"; path = "Target Support Files/Pods-FlutterMixDemo/Pods-FlutterMixDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,8 +74,8 @@
 				457440B123BDD526006F59D0 /* LaunchScreen.storyboard */,
 				457440B423BDD526006F59D0 /* Info.plist */,
 				457440B523BDD526006F59D0 /* main.m */,
-				45FE1B4823BEF3BB009BDFB7 /* SecondViewController.h */,
-				45FE1B4923BEF3BB009BDFB7 /* SecondViewController.m */,
+				45FE1B4E23BF4B1B009BDFB7 /* BaseFlutterViewController.h */,
+				45FE1B4F23BF4B1B009BDFB7 /* BaseFlutterViewController.m */,
 			);
 			path = FlutterMixDemo;
 			sourceTree = "<group>";
@@ -227,10 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45FE1B4A23BEF3BB009BDFB7 /* SecondViewController.m in Sources */,
 				457440AB23BDD522006F59D0 /* ViewController.m in Sources */,
 				457440A523BDD522006F59D0 /* AppDelegate.m in Sources */,
 				457440B623BDD526006F59D0 /* main.m in Sources */,
+				45FE1B5023BF4B1B009BDFB7 /* BaseFlutterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
